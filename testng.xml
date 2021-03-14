@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test name="Test_CH">
+  <classes>
+  <class name ="FreeCRMBasics.FreeCrmJenkinsRunChrome"/>
+  <class name ="FreeCRMBasics.FreeCrmJenkinsRunFireFox"/>
+  </classes>
+  </test>
+  
+  <!--<test name="Test_FF">
+    <classes>
+  <class name ="FreeCRMBasics.FreeCrmJenkinsRunFireFox"></class>
+  </classes>
+  </test>
+    --> 
+    
+    
+    	
+</suite> 

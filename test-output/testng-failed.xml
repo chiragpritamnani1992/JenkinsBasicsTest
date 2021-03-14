@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test_FF(failed)" parallel="tests">
+    <classes>
+      <class name="FreeCRMBasics.FreeCrmJenkinsRunFireFox">
+        <methods>
+          <include name="AddContactLog"/>
+        </methods>
+      </class> <!-- FreeCRMBasics.FreeCrmJenkinsRunFireFox -->
+    </classes>
+  </test> <!-- Test_FF(failed) -->
+</suite> <!-- Failed suite [Suite] -->
