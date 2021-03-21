@@ -94,10 +94,13 @@
 
 	</dependencies>
 
+
+				
 	<build>
+	
 		<plugins>
 
-
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -114,13 +117,16 @@
 				<version>${maven.surefire.version}</version>
 				<configuration>
 					<includes>
-						<include>**/ParallelRun.java</include>
+						<include>/src/test/java/TestNGRunner/testng.xml</include>
 					</includes>
-					<parallel>methods</parallel>
-					<threadCount>4</threadCount>
+					<parallel>classes</parallel>
+					<threadCount>2</threadCount>
 					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
+
+
 			</plugin>
+			
 
 			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-failsafe-plugin</artifactId> 
 				<version>3.0.0-M3</version> <executions> <execution> <goals> <goal>integration-test</goal> 
